@@ -1,0 +1,289 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>OurWebsite</title>
+	<link rel="stylesheet" type="text/css" href="../css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/myIcon.css" />
+    <script src="../js/my.js"></script>
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <!-- 图片放大js -->
+    <script type="text/javascript" src="../js/img.js"></script>
+    </script><script type="text/javascript" src="../js/jquery.SuperSlide.2.1.1.js"></script>
+	
+	<style>
+        li{list-style: none;}
+        .photo ul li{
+            float:left;
+            list-style: none;
+            padding:5px 10px 5px 0;
+            text-align: center;
+        }
+        .photo ul li span{display:block;}
+
+        /* 本例子tab css */
+        .slideTxtBox{ width:640px; border:1px solid #ddd; text-align:left; margin-top:20px; }
+        .slideTxtBox .hd{ height:50px; line-height:50px; background:#f4f4f4; border-bottom:1px solid #ddd;  }
+        .slideTxtBox .hd ul{ float:left;   height:32px; margin:0 auto;  }
+        .slideTxtBox .hd ul li{ float:left; padding:0 30px; cursor:pointer;  }
+        .slideTxtBox .hd ul li.on{ height:50px;  background-color: rgb(9, 82, 158);color:#fff; }
+        .slideTxtBox .bd ul{ width:100%;margin:0;padding:0;  zoom:1;  }
+        .slideTxtBox .bd ul table{ width:640px;margin:0;padding: 20px 0;  zoom:1;  }
+        .slideTxtBox .bd ul table tr{ width:640px;margin:0;padding:0;  zoom:1;  }
+        .slideTxtBox .bd ul table tr:nth-child(even){background:#BEE3F5;color:#666;}
+        .slideTxtBox .bd ul table tr td{ width:25%;margin:0;padding:5px 0;border:0;zoom:1;text-align:center;  }
+        .slideTxtBox .bd ul table tr th{width:25%;margin:0;padding:5px 0;zoom:1;text-align:center;}
+
+        #content .img_ul li{padding:5px 10px 5px 0;}
+
+    </style>
+
+</head>
+<body>
+
+    <!-- start遮罩层&&扩大图 -->
+    <div class="mask opacity" id="mask">
+        
+    </div>
+    <div id="img_expand" style="margin-left:-300px;">
+        <img src="" style="width:600px;max-height:700px;">
+    </div>
+    <!-- end遮罩层&&扩大图 -->
+
+	<div id="banner"><img src="../images/common/banner.jpg"></div>
+
+	   <div id="nav" >
+        <ul>
+            <li onclick="back()"><a href="../index.html">首页</a>
+            </li>
+            <li onmousemove="mouseover(this)" onmouseleave="mouseleave(this)" onclick="change()"><a href="../page0.html">基地情况</a>
+                <div>
+                    <ul>
+                        <li><a href="../page0/page00.html">师资力量</a></li>
+                        <li><a href="../page0/page01.html">教学环境</a></li>
+                        <li><a href="../page0/page02.html">校企合作</a></li>
+                        <li><a href="../page0/page03.html">共建协议</a></li>
+                        <li><a href="../page0/page04.html">保障条件</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li onmousemove="mouseover(this)" onmouseleave="mouseleave(this)"><a>组织管理</a>
+                <div>
+                    <ul>
+                        <li><a href="../page1/page10.html">校方代表</a></li>
+                        <li><a href="../page1/page11.html">基地代表</a></li>
+                        <li><a href="../page1/page12.html">校级管理条例</a></li>
+                        <li><a href="../page1/page13.html">院级管理条例</a></li>
+                        <li><a href="../page1/page14.html">基地管理条例</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li onmousemove="mouseover(this)" onmouseleave="mouseleave(this)"><a>建设内容</a>
+                <div>
+                    <ul>
+                        <li><a href="../page2/page20.html">合作基础</a></li>
+                        <li><a href="../page2/page21.html">建设目标与思路</a></li>
+                        <li><a href="../page2/page22.html">建设任务</a></li>
+                        <li><a href="../page2/page23.html">建设计划</a></li>
+                        
+                    </ul>
+                </div>
+            </li>
+            <li onmousemove="mouseover(this)" onmouseleave="mouseleave(this)"  style = "background-color: #000"><a>建设成果</a>
+                <div>
+                    <ul>
+                        <li><a href="../page3/page30.html">场地建设</a></li>
+                        <li><a href="../page3/page31.html">实习大纲</a></li>
+                        <li><a href="../page3/page32.html">自编教材</a></li>
+                        <li><a href="../page3/page33.html">交流推广</a></li>
+                        <li><a href="../page3/page34.html">实习效果</a></li>
+                    </ul>
+                </div>
+            </li>
+           
+           
+            <li onmousemove="mouseover(this)" onmouseleave="mouseleave(this)"><a href="../page4.html">资料下载</a>
+            </li>
+        </ul>
+    </div>
+
+
+	<div id="pos">您当前的位置 > <a href="#">首页</a>  > <a href="#">建设成果</a> > <span>场地建设</span></div>
+    <div id="container">
+        <div id="left-choose">
+        <ul>
+            <h3><i class="imooc-icon ihead">&#xf0d7;</i>建设成果</h3>
+            <li style="border-bottom:none;"><i class="imooc-icon">&#xf078;</i><a href="../page3/page30.html">场地建设</a></li>
+            <li><i class="imooc-icon">&#xf078;</i><a href="../page3/page31.html">实习大纲</a></li>
+            <li><i class="imooc-icon">&#xf078;</i><a href="../page3/page32.html">自编教材</a></li>
+            <li ><i class="imooc-icon">&#xf078;</i><a href="../page3/page33.html">交流推广</a></li>
+				<li style="background-color: #666;font-weight:bold;border-bottom:none;"><a href="../page3/page34.html" style="color:#fff"><i class="imooc-icon">&#xf078;</i>实习效果</a></li>
+        </ul>
+    </div>
+
+	
+
+	<div id="content">
+            <h3>实习效果</h3>
+        <div class="title" style="margin:0 auto;margin:20px;">
+            <table border="" style="border:1px solid #666;border-collapse:collapse;text-align:center;">
+                <tr>
+                    <th>编号</th>
+                    <th>学生姓名</th>
+                    <th>学校</th>
+                    <th>毕业年份</th>
+                    <th>公司名称</th>
+                    <th>职位 </th>
+                    <th>薪资</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>胡盼</td>
+                    <td>广州大学</td>
+                    <td>2015</td>
+                    <td>广东 汇能网络科技有限公司</td>
+                    <td>网络运维工程师</td>
+                    <td>5000</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>牛谱乐 </td>
+                    <td>广州大学</td>
+                    <td>2015</td>
+                    <td>华工信元有限公司</td>
+                    <td>安卓开发工程师</td>
+                    <td>5000</td>
+                </tr>
+                <tr>
+                    <td>3</td>  
+                    <td>杨起富</td>
+                    <td>广州大学</td>
+                    <td>2015</td>
+                    <td>中软集团</td>
+                    <td>Linux系统工程师</td>
+                    <td>5200</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>曾俊峰</td>
+                    <td>广州大学</td>
+                    <td>2015</td>
+                    <td>广州乐商软件技术有限公司</td>
+                    <td>安卓开发工程师</td>
+                    <td>5500</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>王琳博</td>
+                    <td>广州大学</td>
+                    <td>2015</td>
+                    <td>深圳安泰有限公司</td>
+                    <td>安卓开发工程师</td>
+                    <td>6000</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>吴海俊</td>
+                    <td>广州大学</td>
+                    <td>2015</td>
+                    <td>广州汉佳信息科技有限公司</td>
+                    <td>驻点南航JAVA工程师</td>
+                    <td>5500</td>
+                </tr>
+            </table>
+            <div class="photo">
+            <ul class="img_ul">
+                <li>
+                    <img src="../images/p3/p32/zjf.jpg" alt="曾俊峰" width="190" height="200"/>
+                    <p>曾俊峰</p>
+                </li>
+                <li>
+                    <img src="../images/p3/p32/npl.jpg" alt="牛谱乐" width="190" height="200"/>
+                    <p>牛谱乐</p>
+                </li>
+                <li>
+                    <img src="../images/p3/p32/wlb.jpg" alt="王琳博" width="190" height="200"/>
+                    <p>王琳博</p>
+                </li>
+                <li>
+                    <img src="../images/p3/p32/ljj.jpg" alt="林家杰" width="190" height="200"/>
+                    <p>林家杰</p>
+                </li>
+                <li>
+                    <img src="../images/p3/p32/whj.jpg" alt="吴海俊" width="190" height="200"/>
+                    <p>吴海俊</p>
+                </li>
+						<li>
+                    <img src="../images/p3/p32/yqf.jpg" alt="杨起富" width="190" height="200"/>
+                    <p>杨起富</p>
+                </li>
+            </ul>
+            </div>
+
+            <div style="clear:both;"></div>
+            <!-- tab切换开始 -->
+            <div class="slideTxtBox">
+                <div class="hd"> 
+                    <ul>
+                        <li>Oracle认证榜</li>
+                        <li>华为认证榜</li>
+                        <li>思科认证榜</li>
+                        <li>Redhat认证榜</li>
+                    </ul>
+                </div>
+                <div class="bd">
+                    <ul>
+                        <table>
+                            <tr><th>序号</th><th>姓名</th><th>认证课程</th><th>认证时间</th></tr>
+                            <tr><td>1</td><td>张瑞东</td><td>OCP</td><td>2015-07-30</td></tr>
+                            <tr><td>2</td><td>李天赞</td><td>OCP</td><td>2015-07-30</td></tr>
+                            <tr><td>3</td><td>杜书平</td><td>OCP</td><td>2015-07-30</td></tr>
+                            <tr><td>3</td><td>杨涛</td><td>OCP</td><td>2015-07-27</td></tr>
+                            <tr><td>3</td><td>刘建勇</td><td>OCP</td><td>2015-07-27</td></tr>
+                        </table>
+                      
+                    </ul>
+                    <ul>
+                        <table>
+                            <tr><th>序号</th><th>姓名</th><th>认证课程</th><th>认证时间</th></tr>
+                            <tr><td>1</td><td>林建宁</td><td>HCNP</td><td>2015-12-25</td></tr>
+                            <tr><td>2</td><td>张恒</td><td>HCNP</td><td>2015-12-25</td></tr>
+                            <tr><td>3</td><td>朱镇文</td><td>HCNP</td><td>2015-12-24</td></tr>
+                            <tr><td>4</td><td>赖怡醒</td><td>HCNP</td><td>2015-12-23</td></tr>
+                            <tr><td>5</td><td>潘亮君</td><td>HCNP</td><td>2015-12-23</td></tr>
+                        </table>
+                    </ul>
+                    <ul>
+                        <table>
+                            <tr><th>序号</th><th>姓名</th><th>认证课程</th><th>认证时间</th></tr>
+                            <tr><td>1</td><td>范储晖</td><td>CCIE-SEC</td><td>2016-01-28</td></tr>
+                            <tr><td>2</td><td>欧伯麟</td><td>CCIE-SP</td><td>2016-01-28</td></tr>
+                            <tr><td>3</td><td>朱男曼</td><td>CCIE-RS</td><td>2016-01-27</td></tr>
+                            <tr><td>4</td><td>欧襄蔚</td><td>CCIE-SEC</td><td>2016-01-25</td></tr>
+                            <tr><td>5</td><td>钱记徽</td><td>CCIE-SP</td><td>2016-01-25</td></tr>
+                        </table>
+                    </ul>
+                    <ul>
+                        <table>
+                            <tr><th>序号</th><th>姓名</th><th>认证课程</th><th>认证时间</th></tr>
+                            <tr><td>1</td><td>曹楚戈</td><td>RHCA</td><td>2015-12-28</td></tr>
+                            <tr><td>2</td><td>彭显扬</td><td>RHCA</td><td>2015-12-28</td></tr>
+                            <tr><td>3</td><td>吴明宇</td><td>RHCA</td><td>2015-12-28</td></tr>
+                            <tr><td>4</td><td>杨爱平</td><td>RHCA</td><td>2015-12-28</td></tr>
+                            <tr><td>5</td><td>罗钢</td><td>RHCA</td><td>2015-12-09</td></tr>
+                        </table>
+                    </ul>
+                </div>
+            </div>
+            <!-- tab切换结束 --> 
+
+        </div>
+
+    </div>
+        <div id="foot" style="float:left;">版权所有 © 2015 广州大学 计算机科学与教育软件学院地址:广州市番禺大学城外环西路230号 邮编:510006</div>
+    </div>
+	<script type="text/javascript">jQuery(".slideTxtBox").slide();</script>
+	</body>
+</html>

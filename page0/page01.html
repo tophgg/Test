@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>OurWebsite</title>
+    <link rel="stylesheet" type="text/css" href="../css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/myIcon.css" />
+	<script type="text/javascript" src="../js/my.js"></script>
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <!-- 图片放大js -->
+    <script type="text/javascript" src="../js/img.js"></script>
+</head>
+<style type="text/css">
+    .pic{width: 240px;height: 200px;}
+</style>  
+<body>
+    <!-- start遮罩层&&扩大图 -->
+    <div class="mask opacity" id="mask">
+        
+    </div>
+    <div id="img_expand" style="">
+        <img src="" style="width:800px;max-height:800px;">
+    </div>
+    <!-- end遮罩层&&扩大图 -->
+
+	<div id="banner"><img src="../images/common/banner.jpg"></div>
+
+	   <div id="nav" >
+        <ul>
+            <li onclick="back()"><a href="../index.html">首页</a>
+            </li>
+            <li onmousemove="mouseover(this)" onmouseleave="mouseleave(this)" onclick="change()" style = "background-color: #000"><a href="../page0.html">基地情况</a>
+                <div>
+                    <ul>
+                        <li><a href="page00.html">师资力量</a></li>
+                        <li><a>教学环境</a></li>
+                        <li><a href="page02.html">校企合作</a></li>
+                        <li><a href="page03.html">共建协议</a></li>
+                        <li><a href="page04.html">保障条件</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li onmousemove="mouseover(this)" onmouseleave="mouseleave(this)"><a>组织管理</a>
+                <div>
+                    <ul>
+                        <li><a href="../page1/page10.html">校方代表</a></li>
+                        <li><a href="../page1/page11.html">基地代表</a></li>
+                        <li><a href="../page1/page12.html">校级管理条例</a></li>
+                        <li><a href="../page1/page13.html">院级管理条例</a></li>
+                        <li><a href="../page1/page14.html">基地管理条例</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li onmousemove="mouseover(this)" onmouseleave="mouseleave(this)"><a>建设内容</a>
+                <div>
+                    <ul>
+                        <li><a href="../page2/page20.html">合作基础</a></li>
+                        <li><a href="../page2/page21.html">建设目标与思路</a></li>
+                        <li><a href="../page2/page22.html">建设任务</a></li>
+                        <li><a href="../page2/page23.html">建设计划</a></li>
+                        
+                        
+                    </ul>
+                </div>
+            </li>
+            <li onmousemove="mouseover(this)" onmouseleave="mouseleave(this)"><a>建设成果</a>
+                <div>
+                    <ul>
+                        <li><a href="../page3/page30.html">场地建设</a></li>
+                        <li><a href="../page3/page31.html">实习大纲</a></li>
+                        <li><a href="../page3/page32.html">自编教材</a></li>
+                        <li><a href="../page3/page33.html">交流推广</a></li>
+                        <li><a href="../page3/page34.html">实习效果</a></li>
+                    </ul>
+                </div>
+            </li>
+           
+           
+            <li onmousemove="mouseover(this)" onmouseleave="mouseleave(this)"><a href="../page4.html">资料下载</a>
+            </li>
+        </ul>
+    </div>
+
+	
+	<div id="pos">您当前的位置 > <a href="#">首页</a>  > <a href="#">基地概况</a> > <span>师资力量</span></div>
+    <div id="container">
+        <div id="left-choose">
+        <ul>
+            <h3><i class="imooc-icon ihead">&#xe603;</i>基地概况</h3>
+            <li><i class="imooc-icon">&#xf078;</i><a href="page00.html" >师资力量</a></li>
+            <li style="background-color: #666;font-weight:bold;"><i class="imooc-icon">&#xf078;</i><a href="page01.html" style="color:#fff">教学环境</a></li>
+            <li><i class="imooc-icon">&#xf078;</i><a href="page02.html">校企合作</a></li>
+            <li><i class="imooc-icon">&#xf078;</i><a href="page03.html">共建协议</a></li>
+            <li style="border:none;"><i class="imooc-icon">&#xf078;</i><a href="page04.html">保障条件</a></li>
+        </ul>
+    </div>
+        <div id="content">
+            <h3>教学环境</h3>
+            <div class="title" style="margin:0 auto; margin:0 0 10px 10px;">
+                <p>功能室</p>
+            </div>
+            <ul class="img_ul">
+                <li>
+                    <img class="pic"src="../images/p0/p01/gns0.jpg" alt="功能室0" />
+                </li>
+                <li>
+                    <img class="pic" src="../images/p0/p01/gns1.jpg" alt="功能室1" />
+                </li>
+                <li>
+                    <img class="pic" src="../images/p0/p01/gns2.jpg" alt="功能室2" />
+                </li>
+                <li>
+                    <img class="pic" src="../images/p0/p01/gns3.jpg" alt="功能室3" />
+                <li>    
+                    <img class="pic" src="../images/p0/p01/gns4.jpg" alt="功能室4" />
+                <li>
+                    <img class="pic" src="../images/p0/p01/gns5.jpg" alt="功能室5" />
+                </li>
+                <div style="clear:both"></div>
+            </ul>
+            <div class="title" style="margin:0 auto; margin:0 0 10px 10px;">
+                <p>机房-华为规格机架</p>
+            </div>
+            <ul class="img_ul">
+                <li>
+                    <img class="pic" src="../images/p0/p01/jf-hw.jpg" alt="机房-华为规格机架" />
+                </li>
+                <div style="clear:both"></div>
+            </ul>
+            <div class="title" style="margin:0 auto; margin:0 0 10px 10px;">
+                <p>机房-思科规格机架</p>
+            </div>
+            <ul class="img_ul">
+                <li>
+                    <img class="pic" src="../images/p0/p01/jf-sk.jpg" alt="机房-思科规格机架" />
+                </li>
+                <div style="clear:both"></div>
+            </ul>
+            <div class="title" style="margin:0 auto; margin:0 0 10px 10px;">
+                <p>机房</p>
+            </div>
+            <ul class="img_ul">
+                <li>
+                    <img class="pic" src="../images/p0/p01/jf.jpg" alt="机房" />
+                </li>
+                <div class="" style="clear:both;height:10px;width:200px;"></div>
+            </ul>
+            <div class="title" style="margin:0 auto; margin:0 0 10px 10px;">
+                <p>讨论区</p>
+            </div>
+            <ul class="img_ul">
+                <li>
+                    <img class="pic" src="../images/p0/p01/yzl.jpg" alt="右侧走廊" />
+                </li>
+                <li>    
+                    <img class="pic" src="../images/p0/p01/zzl.jpg" alt="左侧走廊" />
+                </li>
+                <!-- <li><div style="clear:both"></div></li> -->
+            </ul>    
+            <!-- </div> -->
+        </div>
+
+         <div id="foot" style="float:left;">版权所有 © 2015 广州大学 计算机科学与教育软件学院地址:广州市番禺大学城外环西路230号 邮编:510006</div>
+	
+</body>
+</html>

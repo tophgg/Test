@@ -1,0 +1,13 @@
+<!--[if lte IE 6]>
+<style>
+* html,* html body{background-image:url(about:blank); background-attachment:fixed}/* 修正IE6抖动bug */
+.bar{
+	display:none;
+	position:fixed; top:200px; left:1200px; _position:absolute; _left:expression(eval(document.documentElement.scrollLeft)+1200); 
+	_top:expression(eval(document.documentElement.scrollTop)+200)
+	}/* 前缀“_”只能在IE6浏览器下识别 */
+.bar ul { list-style-type: none; margin: 0px; padding: 0px;width:66px;}
+.bar ul li { line-height: 20px;  background-color: #ffffff; text-align: center;border:1px solid #000000; }
+.bar ul li:hover { color: #fff; background-color: #000; display: inline-block; width: 100%; }
+</style>
+<![endif]-->

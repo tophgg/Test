@@ -1,0 +1,21 @@
+@font-face {
+	font-family: "imooc-icon";
+	src:url("../fonts/icomoon.eot");/*ie9兼容模式*/
+	src:url("../fonts/icomoon.eot?#iefix") format("embedded-opentype")
+		,url("../fonts/icomoon.woff") format("woff")
+		,url("../fonts/icomoon.ttf") format("truetype")
+		,url("../fonts/icomoon.svg") format("svg");
+	font-weight: normal;
+	font-style:normal;
+}
+.imooc-icon{
+	font-family:"imooc-icon";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	
+	-webkitlo-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+i{float:right;padding-right: 10px;padding-top: 4px;display: inline-block;}
+.ihead{float:left;padding:0;padding-right: 10px;}

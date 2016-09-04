@@ -1,0 +1,94 @@
+    *{font-family: "微软雅黑";}
+    
+
+    #pos { padding-left:20px;height:20px ; width: 900px;  margin: 0 auto ;font-size:10px; text-align: left;padding-top: 1px; padding-bottom: 1px;margin:6px 0;}
+    #pos a{color:black;}
+    #pos span{color: lightblue;}
+
+    #container{width:900px;margin:0 auto;margin-top:10px;}
+    #left-choose{width:200px;float:left;border:1px solid #ccc;}
+    #left-choose ul{
+    	margin:0;padding:0;
+    	list-style:none;
+
+    }
+    #left-choose ul h3{height:30px;line-height:30px;margin:0px;padding:2px 5px 2px 5px;padding-left:20px;border-bottom:1px solid #ccc;color:#666;background:url(../images/common/bg.png) left -116px;}
+    #left-choose ul li{
+    	padding:4px 5px 4px 5px;border-bottom:1px dashed #ccc;
+    }
+    #left-choose ul li a{padding-left:40px;text-decoration: none;color:#666;display:block;}
+    #left-choose ul li:hover{background-color:#E6E6E6;}
+
+
+	#content { width: 680px;float:right;border:1px solid #ccc;margin-bottom: 20px;}
+	#content h3{margin:0px;padding:2px 5px 2px 5px;height:27px;line-height:27px;padding-left:10px;color:#666;background:url(../images/common/bg.png) left -121px;border-bottom:1px solid #ccc;}
+	#content span{float:right;}
+	#content .download{width:580px;}
+	#content .download li{padding:5px;list-style:inside circle;color:#666;border-bottom:1px dotted #ccc;font-size:14px;}
+    #teacher_list {
+        width: 535px; 
+        margin-bottom: 20px;
+        margin-top: 10px; 
+        float: left; 
+        display: inline;
+        overflow:hidden;
+    }
+    #teacher_list li {
+        margin: 0px 0px 20px 20px; 
+        width: 155px; 
+        border-bottom:1px dotted #c9c9c9; 
+        float: left;
+        display:inline;
+        overflow:hidden;
+    }
+    #teacher_list li.first {margin-left: 0px;}
+    
+    #teacher_list li dl {
+        width: 155px; 
+        margin-bottom: 10px; 
+        float: left;
+        display:inline;
+    }
+    #teacher_list li dl dt {
+        width: 155px; 
+        height: 118px; 
+        text-align: center; 
+        margin-bottom: 10px; 
+        float: left;
+        display:inline;
+    }
+    #teacher_list li dl dd {
+        width: 155px; 
+        line-height: 20px; 
+        float: left; 
+        margin:0;
+
+    }
+    #teacher_list li dl dd.cname { 
+        text-align: center; 
+        color: rgb(84, 116, 148); 
+        font-weight: bold; 
+    }
+    #teacher_list li dl .shouke {
+        width: 155px; 
+        line-height: 20px; 
+        float: left; 
+        height:60px; 
+    }
+    
+    #teacher_list li a {
+        color: #666;
+        text-decoration: none;
+        width: 155px;
+        height: 230px;
+        display: block;
+        font-size: 12px;}
+    #teacher_list li a:hover {background-color: rgb(248, 248, 248);}
+    #cname{height:20px;width:100%; }
+
+    /*图片放大样式*/
+    .mask{height:100%; width:100%; position:fixed; _position:absolute; top:0;left:0; z-index:1000;display:none;} 
+    .opacity{ opacity:0.5; filter:alpha(opacity=50);-moz-opacity:0.5; background-color:#000;zoom:1 } 
+    #img_expand{text-align: center;position:fixed; top:100px;left:50%;margin-left:-400px;z-index: 1001;display:none;cursor:pointer;}
+    #content .img_ul li{list-style: none;float:left;padding:30px;}
+    #content .img_ul li img{cursor:pointer;}
